@@ -2,6 +2,9 @@
 echo starting backend server...
 
 cd backend
-.\env\Scripts\python manage.py runserver
-
+echo Activating virtual environment...
+.\myenv\Scripts\activate
+pip install -r requirements.txt
+echo running django server...
+python manage.py runserver
 pause
